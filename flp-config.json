@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "generated.app.ziot_forum_dashboard",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/webapp",
+        "appUrl": "#ziot_forum_dashboard-Display",
+        "navigationComponentName": "generated.app",
+        "intentSemanticObject": "ziot_forum_dashboard",
+        "intentAction": "Display",
+        "html5ApplicationName": "ziotforumdashboard",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "b3324438-dfa0-409f-9810-b88ed3581752"
+        ],
+        "contentPackages": [
+            "4ea484bf-c08c-4160-bc7e-0bc9823e3771"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Arete IoT Dashboard",
+        "subtitle": "",
+        "searchKeywords": "Arete IoT Dashboard,",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

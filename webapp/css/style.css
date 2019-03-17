@@ -1,0 +1,12 @@
+.highAlert {
+	color: #ff0000 !important; //vodafone
+}
+
+.nearTheThreshold{
+	color: #ffa200 !important; //turanj
+}
+
+.underTheThreshold{
+	color: #02ac02 !important; //green
+}
+

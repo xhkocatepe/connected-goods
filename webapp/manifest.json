@@ -1,0 +1,478 @@
+{
+	"_version": "1.1.0",
+	"start_url": "webapp/index.html",
+	"sap.app": {
+		"_version": "1.2.0",
+		"id": "generate.app",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"dataSources": {
+			"main": {
+				"uri": "/destinations/sadeCloud/iotmmsxs/iotservice.xsodata/",
+				"type": "OData",
+				"settings": {
+					"defaultUpdateMethod": "PUT",
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"ach": "ach",
+		"resources": "resources.json",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.32.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.2.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "generated.app.viewlaunch_page",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.32.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"": {
+				"dataSource": "main",
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"loadMetadataAsync": false,
+					"json": true,
+					"bJSON": true,
+					"defaultBindingMode": "TwoWay",
+					"useBatch": true,
+					"refreshAfterChange": false,
+					"disableHeadRequestForToken": true
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "generated.app.view",
+				"controlId": "App",
+				"clearTarget": false,
+				"controlAggregation": "pages",
+				"bypassedPage": {
+					"target": [
+						"launch_page"
+					]
+				}
+			},
+			"routes": [
+				{
+					"pattern": "launch_page/:context:",
+					"name": "launch_page",
+					"target": [
+						"launch_page"
+					]
+				},
+				{
+					"pattern": "",
+					"name": "default",
+					"target": [
+						"launch_page"
+					]
+				},
+				{
+					"pattern": "popover_2/:context:",
+					"name": "popover_2",
+					"target": [
+						"popover_2"
+					]
+				},
+				{
+					"pattern": "dialog_1/:context:",
+					"name": "dialog_1",
+					"target": [
+						"dialog_1"
+					]
+				},
+				{
+					"pattern": "dialog_2/:context:",
+					"name": "dialog_2",
+					"target": [
+						"dialog_2"
+					]
+				},
+				{
+					"pattern": "popover_3/:context:",
+					"name": "popover_3",
+					"target": [
+						"popover_3"
+					]
+				},
+				{
+					"pattern": "dialog_3/:context:",
+					"name": "dialog_3",
+					"target": [
+						"dialog_3"
+					]
+				},
+				{
+					"pattern": "dialog_4/:context:",
+					"name": "dialog_4",
+					"target": [
+						"dialog_4"
+					]
+				},
+				{
+					"pattern": "popover_4/:context:",
+					"name": "popover_4",
+					"target": [
+						"popover_4"
+					]
+				},
+				{
+					"pattern": "dialog_5/:context:",
+					"name": "dialog_5",
+					"target": [
+						"dialog_5"
+					]
+				},
+				{
+					"pattern": "dialog_6/:context:",
+					"name": "dialog_6",
+					"target": [
+						"dialog_6"
+					]
+				},
+				{
+					"pattern": "popover_5/:context:",
+					"name": "popover_5",
+					"target": [
+						"popover_5"
+					]
+				},
+				{
+					"pattern": "dialog_7/:context:",
+					"name": "dialog_7",
+					"target": [
+						"dialog_7"
+					]
+				},
+				{
+					"pattern": "dialog_8/:context:",
+					"name": "dialog_8",
+					"target": [
+						"dialog_8"
+					]
+				},
+				{
+					"pattern": "popover_6/:context:",
+					"name": "popover_6",
+					"target": [
+						"popover_6"
+					]
+				},
+				{
+					"pattern": "dialog_9/:context:",
+					"name": "dialog_9",
+					"target": [
+						"dialog_9"
+					]
+				},
+				{
+					"pattern": "dialog_10/:context:",
+					"name": "dialog_10",
+					"target": [
+						"dialog_10"
+					]
+				},
+				{
+					"pattern": "cooler_2_doors_1/:context:",
+					"name": "cooler_2_doors_1",
+					"target": [
+						"cooler_2_doors_1"
+					]
+				},
+				{
+					"pattern": "popover_7/:context:",
+					"name": "popover_7",
+					"target": [
+						"popover_7"
+					]
+				},
+				{
+					"pattern": "dialog_11/:context:",
+					"name": "dialog_11",
+					"target": [
+						"dialog_11"
+					]
+				},
+				{
+					"pattern": "dialog_12/:context:",
+					"name": "dialog_12",
+					"target": [
+						"dialog_12"
+					]
+				},
+				{
+					"pattern": "coffee_machine_1/:context:",
+					"name": "coffee_machine_1",
+					"target": [
+						"coffee_machine_1"
+					]
+				},
+				{
+					"pattern": "popover_8/:context:",
+					"name": "popover_8",
+					"target": [
+						"popover_8"
+					]
+				},
+				{
+					"pattern": "dialog_13/:context:",
+					"name": "dialog_13",
+					"target": [
+						"dialog_13"
+					]
+				},
+				{
+					"pattern": "dialog_14/:context:",
+					"name": "dialog_14",
+					"target": [
+						"dialog_14"
+					]
+				},
+				{
+					"pattern": "launch_page/:context:",
+					"name": "launch_page",
+					"target": [
+						"launch_page"
+					]
+				},
+				{
+					"pattern": "popover_2/:context:",
+					"name": "popover_2",
+					"target": [
+						"popover_2"
+					]
+				},
+				{
+					"pattern": "dialog_1/:context:",
+					"name": "dialog_1",
+					"target": [
+						"dialog_1"
+					]
+				},
+				{
+					"pattern": "dialog_2/:context:",
+					"name": "dialog_2",
+					"target": [
+						"dialog_2"
+					]
+				},
+				{
+					"pattern": "popover_3/:context:",
+					"name": "popover_3",
+					"target": [
+						"popover_3"
+					]
+				},
+				{
+					"pattern": "dialog_3/:context:",
+					"name": "dialog_3",
+					"target": [
+						"dialog_3"
+					]
+				},
+				{
+					"pattern": "dialog_4/:context:",
+					"name": "dialog_4",
+					"target": [
+						"dialog_4"
+					]
+				},
+				{
+					"pattern": "popover_4/:context:",
+					"name": "popover_4",
+					"target": [
+						"popover_4"
+					]
+				},
+				{
+					"pattern": "dialog_5/:context:",
+					"name": "dialog_5",
+					"target": [
+						"dialog_5"
+					]
+				},
+				{
+					"pattern": "dialog_6/:context:",
+					"name": "dialog_6",
+					"target": [
+						"dialog_6"
+					]
+				},
+				{
+					"pattern": "popover_5/:context:",
+					"name": "popover_5",
+					"target": [
+						"popover_5"
+					]
+				},
+				{
+					"pattern": "dialog_7/:context:",
+					"name": "dialog_7",
+					"target": [
+						"dialog_7"
+					]
+				},
+				{
+					"pattern": "dialog_8/:context:",
+					"name": "dialog_8",
+					"target": [
+						"dialog_8"
+					]
+				},
+				{
+					"pattern": "popover_6/:context:",
+					"name": "popover_6",
+					"target": [
+						"popover_6"
+					]
+				},
+				{
+					"pattern": "dialog_9/:context:",
+					"name": "dialog_9",
+					"target": [
+						"dialog_9"
+					]
+				},
+				{
+					"pattern": "dialog_10/:context:",
+					"name": "dialog_10",
+					"target": [
+						"dialog_10"
+					]
+				},
+				{
+					"pattern": "cooler_2_doors_1/:context:",
+					"name": "cooler_2_doors_1",
+					"target": [
+						"cooler_2_doors_1"
+					]
+				},
+				{
+					"pattern": "popover_7/:context:",
+					"name": "popover_7",
+					"target": [
+						"popover_7"
+					]
+				},
+				{
+					"pattern": "dialog_11/:context:",
+					"name": "dialog_11",
+					"target": [
+						"dialog_11"
+					]
+				},
+				{
+					"pattern": "dialog_12/:context:",
+					"name": "dialog_12",
+					"target": [
+						"dialog_12"
+					]
+				},
+				{
+					"pattern": "coffee_machine_1/:context:",
+					"name": "coffee_machine_1",
+					"target": [
+						"coffee_machine_1"
+					]
+				},
+				{
+					"pattern": "popover_8/:context:",
+					"name": "popover_8",
+					"target": [
+						"popover_8"
+					]
+				},
+				{
+					"pattern": "dialog_13/:context:",
+					"name": "dialog_13",
+					"target": [
+						"dialog_13"
+					]
+				},
+				{
+					"pattern": "dialog_14/:context:",
+					"name": "dialog_14",
+					"target": [
+						"dialog_14"
+					]
+				}
+			],
+			"targets": {
+				"launch_page": {
+					"controlAggregation": "pages",
+					"viewName": "launch_page",
+					"viewId": "launch_page",
+					"viewLevel": 1
+				},
+				"cooler_2_doors_1": {
+					"controlAggregation": "pages",
+					"viewName": "cooler_2_doors_1",
+					"viewId": "cooler_2_doors_1",
+					"viewLevel": 1
+				},
+				"coffee_machine_1": {
+					"controlAggregation": "pages",
+					"viewName": "coffee_machine_1",
+					"viewId": "coffee_machine_1",
+					"viewLevel": 1
+				}
+			}
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

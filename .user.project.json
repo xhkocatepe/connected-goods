@@ -1,0 +1,25 @@
+{
+  "run": [
+    {
+      "filePath": "/webapp/test/testFLPServiceMockServer.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 8583187,
+        "displayName": "Run testFLPServiceMockServer.html",
+        "lastRunTimeStamp": 1507202114794
+      }
+    }
+  ],
+  "hybrid": {
+    "dirty": true
+  }
+}

@@ -1,0 +1,27 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.launch_page" xmlns:m="sap.m">
+    <m:Page showHeader="true" title="Connected Goods" showFooter="false" showNavButton="false">
+        <m:content>
+            <m:HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="SpaceAround" renderType="Div" visible="true" displayInline="false">
+                <m:items>
+                    <m:StandardTile title="Cooler, 2 Doors" number="2" numberUnit="Notification" info="Needs Attention" infoState="Error" icon="/webapp/resources/cooler.png" press="_onStandardTilePress"/>
+                    <m:StandardTile title="Coffee Machine" number="3" numberUnit="Notification" info="Needs Attention" infoState="Error" icon="/webapp/resources/CoffeeMachine_.jpg" press="_onStandardTilePress1"/>
+                </m:items>
+                <m:layoutData/>
+            </m:HBox>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft/>
+                <m:contentMiddle/>
+                <m:contentRight>
+                    <m:Button text="Approve" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <m:Button text="Reject" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <m:Button text="" type="Default" icon="sap-icon://action" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>
